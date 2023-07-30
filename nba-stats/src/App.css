@@ -36,3 +36,117 @@
     transform: rotate(360deg);
   }
 }
+
+/* App.css */
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #003b71; /* Set the background color to NBA blue */
+  font-family: "Arial", sans-serif; /* Choose a suitable font */
+  color: white;
+  text-align: center;
+  background-color: #003b71;
+  font-family: "Arial", sans-serif;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column; /* Set the header to be at the top of the page */
+  align-items: center; /* Center the header horizontally */
+  justify-content: flex-start; /* Align the header at the top */
+  min-height: 100vh; /* Ensure the header takes the full height of the viewport */
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px; /* Adjust margin-top to center the form */
+}
+
+input[type="text"] {
+  margin-bottom: 20px;
+  margin-left: 10px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+input[type="submit"] {
+  padding: 12px 24px;
+  font-size: 18px;
+  background-color: #ba0c2f; /* Set the submit button background color to NBA red */
+  color: white; /* Set the submit button text color to white */
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+input[type="submit"]:hover {
+  background-color: #aa0928; /* Darken the submit button color on hover */
+}
+
+.PlayerStats {
+  margin-top: 30px;
+  font-size: 20px;
+}
+
+/* Add styles for the scoreboard container */
+.Scoreboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #f2f2f2; /* Set the scoreboard background color to white */
+  color: #003b71; /* Set the text color to NBA blue */
+  border-radius: 10px;
+  margin-top: 30px;
+}
+
+/* Style each stat within the scoreboard container */
+.Score {
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  background-color: #ba0c2f; /* Set the stat box background color to NBA red */
+  color: white; /* Set the stat box text color to white */
+}
+
+.Header {
+  padding: 20px;
+  background-color: #ba0c2f;
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase; /* Uppercase the text */
+  letter-spacing: 2px;
+  margin-bottom: 75px; /* Increase letter spacing for a bold look */
+}
+
+.Header::before {
+  font-size: 64px;
+  display: block;
+  color: #f2f2f2; /* Set the color to white */
+}
+
+/* Increase spacing between the "N" and the text */
+.Header::after {
+  content: "";
+  display: block;
+  height: 10px;
+}
+
+.App h2 {
+  font-size: 24px;
+  padding: 20px 0; /* Add 20px of padding top and bottom */
+}
+
+
+
+
+
+
+

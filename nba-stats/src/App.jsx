@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
+import "./App.css";
+
 
 class App extends Component {
   constructor(props) {
@@ -62,6 +64,11 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <div className="Header">NBA Stat Tracker</div>
+        <h2>
+          Welcome to my NBA Stat Tracker Application! <br />
+          <br /> To see the season averages of a player for the 2022-23 season, enter their name below.
+        </h2>
         <form onSubmit={this.handleSubmit}>
           <label>
             Name
@@ -74,17 +81,14 @@ class App extends Component {
           </label>
           <input type="submit" value="Submit" />
         </form>
-        games played: {this.state.playerStats["games_played"]}
-        <br />
-        points averaged: {this.state.playerStats["pts"]}
-        <br />
-        rebounds averaged: {this.state.playerStats["reb"]}
-        <br />
-        assists averaged: {this.state.playerStats["ast"]}
-        <br />
-        blocks averaged: {this.state.playerStats["blk"]}
-        <br />
-        steals averaged: {this.state.playerStats["stl"]}
+        <div className="Scoreboard">
+          <div className="Score">Games Played: {this.state.playerStats["games_played"]}</div>
+          <div className="Score">Points Per Game: {this.state.playerStats["pts"]}</div>
+          <div className="Score">Rebounds Per Game: {this.state.playerStats["reb"]}</div>
+          <div className="Score">Assists Per Game: {this.state.playerStats["ast"]}</div>
+          <div className="Score">Blocks Per Game: {this.state.playerStats["blk"]}</div>
+          <div className="Score">Steals Per Game: {this.state.playerStats["stl"]}</div>
+      </div>
       </div>
     );
   }
