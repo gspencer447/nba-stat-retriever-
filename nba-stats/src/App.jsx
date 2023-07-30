@@ -87,7 +87,7 @@ class App extends Component {
           <div className="Score">Assists Per Game: {this.state.playerStats["ast"]}</div>
           <div className="Score">Blocks Per Game: {this.state.playerStats["blk"]}</div>
           <div className="Score">Steals Per Game: {this.state.playerStats["stl"]}</div>
-      </div>
+        </div>
       </div>
     );
   }
