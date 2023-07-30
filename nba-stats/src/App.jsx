@@ -37,7 +37,7 @@ class App extends Component {
         if (res.data.data[0] === undefined) {
           alert("This player is either injured or hasn't played yet!");
         } else if (res.data.data.length > 1) {
-          alert("Please specify or check spelling of the player's name!");
+          alert("Please specify or check the spelling of the player's name!");
         } else {
           await this.getPlayerStats(res.data.data[0].id);
         }
@@ -67,11 +67,10 @@ class App extends Component {
         <div className="Header">NBA Stat Tracker</div>
         <h2>
           Welcome to my NBA Stat Tracker Application! <br />
-          <br /> To see the season averages of a player for the 2022-23 season, enter their name below.
+          <br /> To see the season averages of a player from the 2022-23 season, enter their name below.
         </h2>
         <form onSubmit={this.handleSubmit}>
           <label>
-            Name
             <input
               type="text"
               value={this.state.value}
