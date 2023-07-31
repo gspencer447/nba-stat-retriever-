@@ -78,7 +78,7 @@ form {
 
 input[type="text"] {
   background-color: rgba(255, 255, 255, 0.61);
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   margin-left: 10px;
 align-items: center;
   padding: 10px;
@@ -86,11 +86,11 @@ align-items: center;
 }
 
 input[type="submit"] {
-  padding: 12px 24px;
+  padding: 10px 24px;
   font-size: 18px;
   background-color: #ba0c2f; /* Set the submit button background color to NBA red */
   color: white; /* Set the submit button text color to white */
-  border: none;
+  border: 1px solid black;
   cursor: pointer;
   border-radius: 5px;
 }
@@ -115,6 +115,7 @@ input[type="submit"]:hover {
   border-radius: 10px;
   margin: 20px auto;
   max-width: 500px;
+  border: 1px solid black;
 }
 
 /* Style each stat within the scoreboard container */
@@ -126,15 +127,15 @@ input[type="submit"]:hover {
   color: white; /* Set the stat box text color to white */
   margin-bottom: 10px; /* Add some space between each stat */
   padding: 10px;
-  border: 1px solid white;
+  border: 1px solid black;
   border-radius: 5px;
   width: 250px; /* Set a fixed width for each stat box */
 }
 
 .Header {
-  padding: 20px;
+  padding: 15px;
   background-color: #ba0c2f;
-  font-size: 32px;
+  font-size: 28px;
   font-weight: bold;
   text-transform: uppercase; /* Uppercase the text */
   letter-spacing: 2px;
@@ -142,7 +143,7 @@ input[type="submit"]:hover {
 }
 
 .Header::before {
-  font-size: 64px;
+  font-size: 50px;
   display: block;
   color: #f2f2f2; /* Set the color to white */
 }

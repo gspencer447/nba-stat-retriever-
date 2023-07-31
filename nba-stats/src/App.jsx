@@ -19,8 +19,11 @@ class App extends Component {
   };
 
   handleChange = (event) => {
-    const playerName = event.target.value.trim();
-    this.setState({ playerName });
+    const playerName = event.target.value.trim(); // Remove spaces before and after the name
+    const replace = playerName.replace(/\s+/g, ' '); // Remove extra spaces inside the name
+    if (replace.length > 0) {
+      this.setState({ playerName: replace });
+    }
   };
   
   getPlayerId = () => {
@@ -71,12 +74,27 @@ class App extends Component {
           <input type="submit" value="Submit" />
         </form>
         <div className="Scoreboard">
-          <div className="Score">Games Played: {this.state.playerStats["games_played"]}</div>
-          <div className="Score">Points Per Game: {this.state.playerStats["pts"]}</div>
-          <div className="Score">Rebounds Per Game: {this.state.playerStats["reb"]}</div>
-          <div className="Score">Assists Per Game: {this.state.playerStats["ast"]}</div>
-          <div className="Score">Blocks Per Game: {this.state.playerStats["blk"]}</div>
-          <div className="Score">Steals Per Game: {this.state.playerStats["stl"]}</div>
+          <div className="Score"><p>Games Played:</p> 
+          <p>{this.state.playerStats["games_played"]}</p>
+          </div>
+          <div className="Score"><p>Points Per Game: </p>
+          <p>{this.state.playerStats["pts"]}</p>
+          </div>
+          <div className="Score">
+            <p>Rebounds Per Game:</p>
+            <p>{this.state.playerStats["reb"]}</p>
+            </div>
+          <div className="Score">
+            <p>Assists Per Game:</p>
+          <p>{this.state.playerStats["ast"]}</p>
+          </div>
+          <div className="Score">
+            <p>Blocks Per Game:</p>
+            <p>{this.state.playerStats["blk"]}</p>
+            </div>
+          <div className="Score"><p>Steals Per Game:</p>
+          <p>{this.state.playerStats["stl"]}</p>
+          </div>
         </div>
       </div>
     );
