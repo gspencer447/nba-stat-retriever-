@@ -135,6 +135,7 @@ input[type="submit"]:hover {
 .Header {
   padding: 15px;
   background-color: #ba0c2f;
+  border: 1px solid black;
   font-size: 28px;
   font-weight: bold;
   text-transform: uppercase; /* Uppercase the text */
