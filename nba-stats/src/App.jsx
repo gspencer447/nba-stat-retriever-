@@ -19,19 +19,12 @@ class App extends Component {
   };
 
   handleChange = (event) => {
-    const replace = event.target.value.split(" ").join("_");
-    if (replace.length > 0) {
-      this.setState({ playerName: replace });
-    } else {
-      alert("Please type player's name!");
-    }
+    const playerName = event.target.value.trim();
+    this.setState({ playerName });
   };
-
+  
   getPlayerId = () => {
-    axios
-      .get(
-        `https://www.balldontlie.io/api/v1/players?search=${this.state.playerName}`
-      )
+    axios.get(`https://www.balldontlie.io/api/v1/players?search=${this.state.playerName}`)
       .then(async (res) => {
         // console.log(res.data.data);
         if (res.data.data[0] === undefined) {
@@ -48,10 +41,7 @@ class App extends Component {
   };
 
   getPlayerStats = (playerId) => {
-    axios
-      .get(
-        `https://www.balldontlie.io/api/v1/season_averages?season=2022&player_ids[]=${playerId}`
-      )
+    axios.get(`https://www.balldontlie.io/api/v1/season_averages?season=2022&player_ids[]=${playerId}`)
       .then(async (res) => {
         console.log(res.data.data);
         this.setState({ playerStats: res.data.data[0] });
