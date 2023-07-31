@@ -38,17 +38,26 @@
 }
 
 /* App.css */
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('https://www.cleveland.com/resizer/5YrPIgj1Jdu6UJ0w5kvqT00W-nU=/1280x0/smart/cloudfront-us-east-1.images.arcpublishing.com/advancelocal/LJCIEG6HHZGL3MOLBAAGGTOQHU.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
 .App {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-color: #003b71; /* Set the background color to NBA blue */
   font-family: "Arial", sans-serif; /* Choose a suitable font */
   color: white;
   text-align: center;
-  background-color: #003b71;
   font-family: "Arial", sans-serif;
   color: white;
   text-align: center;
@@ -68,6 +77,7 @@ form {
 }
 
 input[type="text"] {
+  background-color: rgba(255, 255, 255, 0.61);
   margin-bottom: 20px;
   margin-left: 10px;
 align-items: center;
@@ -101,8 +111,7 @@ input[type="submit"]:hover {
   align-items: center;
   justify-content: center;
   padding: 20px;
-  background-color: #f2f2f2; /* Set the scoreboard background color to white */
-  color: #003b71; /* Set the text color to NBA blue */
+  background-color: rgba(255, 255, 255, 0.61); /* Set the scoreboard background color to white */
   border-radius: 10px;
   margin-top: 30px;
 }
