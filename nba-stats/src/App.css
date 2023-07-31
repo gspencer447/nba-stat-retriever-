@@ -108,21 +108,27 @@ input[type="submit"]:hover {
 .Scoreboard {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
+  align-items: flex-start;
+  /* justify-content: center; */
+  padding: 30px;
   background-color: rgba(255, 255, 255, 0.61); /* Set the scoreboard background color to white */
   border-radius: 10px;
-  margin-top: 30px;
+  margin: 20px auto;
+  max-width: 500px;
 }
 
 /* Style each stat within the scoreboard container */
 .Score {
-  padding: 10px;
-  margin: 5px 0;
-  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: #ba0c2f; /* Set the stat box background color to NBA red */
   color: white; /* Set the stat box text color to white */
+  margin-bottom: 10px; /* Add some space between each stat */
+  padding: 10px;
+  border: 1px solid white;
+  border-radius: 5px;
+  width: 250px; /* Set a fixed width for each stat box */
 }
 
 .Header {
@@ -132,7 +138,7 @@ input[type="submit"]:hover {
   font-weight: bold;
   text-transform: uppercase; /* Uppercase the text */
   letter-spacing: 2px;
-  margin-bottom: 75px; /* Increase letter spacing for a bold look */
+  margin-bottom: 20px; /* Increase letter spacing for a bold look */
 }
 
 .Header::before {
@@ -149,8 +155,8 @@ input[type="submit"]:hover {
 }
 
 .App h2 {
-  font-size: 24px;
-  padding: 20px 0; /* Add 20px of padding top and bottom */
+  margin-bottom: 25px; /* Add some space between the header and the h2 */
+  text-align: center; /* Add 20px of padding top and bottom */
 }
 
 
