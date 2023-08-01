@@ -37,7 +37,6 @@
   }
 }
 
-/* App.css */
 body {
   margin: 0;
   padding: 0;
@@ -53,18 +52,11 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   height: 100vh;
-  font-family: "Arial", sans-serif; /* Choose a suitable font */
-  color: white;
-  text-align: center;
   font-family: "Arial", sans-serif;
   color: white;
   text-align: center;
-  display: flex;
-  flex-direction: column; /* Set the header to be at the top of the page */
-  align-items: center; /* Center the header horizontally */
-  justify-content: flex-start; /* Align the header at the top */
+  justify-content: flex-start; 
   min-height: 100vh; /* Ensure the header takes the full height of the viewport */
 }
 
@@ -73,14 +65,14 @@ form {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 30px; /* Adjust margin-top to center the form */
+  margin-top: 30px;
 }
 
 input[type="text"] {
-  background-color: rgba(255, 255, 255, 0.61);
+  background-color: rgba(255, 255, 255, 0.568);
   margin-bottom: 10px;
   margin-left: 10px;
-align-items: center;
+  align-items: center;
   padding: 10px;
   font-size: 16px;
 }
@@ -104,52 +96,49 @@ input[type="submit"]:hover {
   font-size: 20px;
 }
 
-/* Add styles for the scoreboard container */
 .Scoreboard {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  /* justify-content: center; */
   padding: 30px;
-  background-color: rgba(255, 255, 255, 0.61); /* Set the scoreboard background color to white */
+  background-color: rgba(255, 255, 255, 0.514);
   border-radius: 10px;
   margin: 20px auto;
   max-width: 500px;
   border: 1px solid black;
 }
 
-/* Style each stat within the scoreboard container */
 .Score {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #ba0c2f; /* Set the stat box background color to NBA red */
   color: white; /* Set the stat box text color to white */
-  margin-bottom: 10px; /* Add some space between each stat */
+  margin-bottom: 10px; 
   padding: 10px;
   border: 1px solid black;
   border-radius: 5px;
-  width: 250px; /* Set a fixed width for each stat box */
+  width: 250px;
 }
 
 .Header {
   padding: 15px;
   background-color: #ba0c2f;
-  border: 1px solid black;
+  border: 2px solid black;
   font-size: 28px;
   font-weight: bold;
-  text-transform: uppercase; /* Uppercase the text */
+  text-transform: uppercase; 
   letter-spacing: 2px;
-  margin-bottom: 20px; /* Increase letter spacing for a bold look */
+  margin-bottom: 20px;
 }
 
 .Header::before {
   font-size: 50px;
   display: block;
-  color: #f2f2f2; /* Set the color to white */
+  color: #f2f2f2; 
 }
 
-/* Increase spacing between the "N" and the text */
+
 .Header::after {
   content: "";
   display: block;
@@ -157,8 +146,8 @@ input[type="submit"]:hover {
 }
 
 .App h2 {
-  margin-bottom: 25px; /* Add some space between the header and the h2 */
-  text-align: center; /* Add 20px of padding top and bottom */
+  margin-bottom: 0px; 
+  text-align: center; 
 }
 
 
